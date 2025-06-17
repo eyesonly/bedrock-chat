@@ -162,7 +162,7 @@ class BedrockAgent:
 
                 # Process content list
                 for model_invocation_content in content_list:
-                    logger.info(f"model_invocation_content: {model_invocation_content}")
+                    logger.warn(f"model_invocation_content: {model_invocation_content}")
                     traces.append(
                         {
                             "type": model_invocation_content.get("type"),
